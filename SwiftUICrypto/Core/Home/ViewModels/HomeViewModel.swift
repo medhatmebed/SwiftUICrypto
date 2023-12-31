@@ -13,7 +13,6 @@ class HomeViewModel: ObservableObject {
     @Published var portfolioCoins = [CoinModel]()
     
     private let dataService = CoinDataService()
-    
     private var cancellables = Set<AnyCancellable>()
     
     
