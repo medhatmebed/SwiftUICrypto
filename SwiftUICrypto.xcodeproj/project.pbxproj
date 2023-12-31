@@ -19,6 +19,9 @@
 		8B6037CC2B41271A006071D0 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6037CB2B41271A006071D0 /* CoinRowView.swift */; };
 		8B6037CE2B41277F006071D0 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6037CD2B41277F006071D0 /* PreviewProvider.swift */; };
 		8B6037D02B412CFC006071D0 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6037CF2B412CFC006071D0 /* Double.swift */; };
+		8B6037D82B42111E006071D0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6037D72B42111E006071D0 /* HomeViewModel.swift */; };
+		8B6037DB2B4219D7006071D0 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6037DA2B4219D7006071D0 /* CoinDataService.swift */; };
+		8B6037DE2B42246F006071D0 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6037DD2B42246F006071D0 /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		8B6037CB2B41271A006071D0 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		8B6037CD2B41277F006071D0 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		8B6037CF2B412CFC006071D0 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		8B6037D72B42111E006071D0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8B6037DA2B4219D7006071D0 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		8B6037DD2B42246F006071D0 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +74,9 @@
 			isa = PBXGroup;
 			children = (
 				8B6037A22B3FB8B3006071D0 /* SwiftUICryptoApp.swift */,
+				8B6037DC2B422448006071D0 /* Utilities */,
 				8B6037B72B410E72006071D0 /* Extensions */,
+				8B6037D92B4219B2006071D0 /* Services */,
 				8B6037C62B412595006071D0 /* Models */,
 				8B6037BA2B41114A006071D0 /* Core */,
 				8B6037A42B3FB8B3006071D0 /* ContentView.swift */,
@@ -126,6 +134,7 @@
 		8B6037BD2B411174006071D0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8B6037D72B42111E006071D0 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -153,6 +162,22 @@
 				8B6037C92B4125EF006071D0 /* CoinModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8B6037D92B4219B2006071D0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8B6037DA2B4219D7006071D0 /* CoinDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8B6037DC2B422448006071D0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8B6037DD2B42246F006071D0 /* NetworkingManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,12 +250,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B6037DB2B4219D7006071D0 /* CoinDataService.swift in Sources */,
 				8B6037CC2B41271A006071D0 /* CoinRowView.swift in Sources */,
+				8B6037D82B42111E006071D0 /* HomeViewModel.swift in Sources */,
 				8B6037A52B3FB8B3006071D0 /* ContentView.swift in Sources */,
 				8B6037BF2B411192006071D0 /* HomeView.swift in Sources */,
 				8B6037A32B3FB8B3006071D0 /* SwiftUICryptoApp.swift in Sources */,
 				8B6037C32B411372006071D0 /* CircleButtonView.swift in Sources */,
 				8B6037B92B410EA2006071D0 /* Color.swift in Sources */,
+				8B6037DE2B42246F006071D0 /* NetworkingManager.swift in Sources */,
 				8B6037C52B411745006071D0 /* CircleButtonAnimationView.swift in Sources */,
 				8B6037CE2B41277F006071D0 /* PreviewProvider.swift in Sources */,
 				8B6037D02B412CFC006071D0 /* Double.swift in Sources */,
