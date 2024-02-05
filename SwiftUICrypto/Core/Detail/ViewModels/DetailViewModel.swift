@@ -13,7 +13,7 @@ class DetailViewModel: ObservableObject {
     @Published var overviewStatistics = [StatisticModel]()
     @Published var additionalStatistics = [StatisticModel]()
     @Published var coinDescription: String? = nil
-    @Published var wesiteURL: String? = nil
+    @Published var websiteURL: String? = nil
     @Published var redditURL: String? = nil
     
     
@@ -41,7 +41,7 @@ class DetailViewModel: ObservableObject {
         coinDetailDataService.$coinDetails
             .sink { [weak self] returnedCoinDetail in
                 self?.coinDescription = returnedCoinDetail?.readableDescription
-                self?.wesiteURL = returnedCoinDetail?.links?.homepage?.first
+                self?.websiteURL = returnedCoinDetail?.links?.homepage?.first
                 self?.redditURL = returnedCoinDetail?.links?.subredditURL
             }
             .store(in: &cancellables)

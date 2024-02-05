@@ -48,7 +48,7 @@ struct DetailView: View {
                     additionalGrid
                     
                     VStack(alignment: .leading, spacing: 10) {
-                        if let websiteString = vm.wesiteURL, let url = URL(string: websiteString) {
+                        if let websiteString = vm.websiteURL, let url = URL(string: websiteString) {
                             Link("Website", destination: url)
                         }
                         if let redditString = vm.redditURL, let url = URL(string: redditString) {
